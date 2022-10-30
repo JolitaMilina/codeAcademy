@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+$primaryRed: hsl(0, 78%, 62%);
+$primaryCyan: hsl(180, 62%, 55%);
+$primaryOrange: hsl(34, 97%, 64%);
+$primaryBlue: hsl(212, 86%, 64%);
+$neutralDarkBlue: hsl(234, 12%, 34%);
+$neutralGrayish: hsl(229, 6%, 66%);
+$neutralLight: hsl(0, 0%, 98%);
+
+* {
+  margin: 0;
+  padding: o;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  background-color: $neutralLight;
+}
+
+.topsection-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    margin-top: 1rem;
+  }
+}
+
+.topsection {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  flex-wrap: wrap;
+  min-height: 20rem;
+  padding: 2rem;
+}
+
+p {
+  color: $neutralGrayish;
+}
+.light-heading {
+  color: $neutralGrayish;
+  padding-top: 3rem;
+  padding-bottom: 0.2rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.bold-heading {
+  color: $neutralDarkBlue;
+  letter-spacing: 2px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 2rem;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.tile {
+  border: 4px solid white;
+  // display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  flex-wrap: wrap;
+  min-height: 20rem;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  &__h {
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  &__p {
+    margin-bottom: 2rem;
+    font-size: 15px;
+  }
+
+  &__img {
+    align-self: flex-end;
+  }
+
+  &--supervisor {
+    border-top-color: $primaryCyan;
+    border-radius: 0.5rem;
+  }
+
+  &--team-builder {
+    border-top-color: $primaryRed;
+    border-radius: 0.5rem;
+  }
+
+  &--karma {
+    border-top-color: $primaryOrange;
+    border-radius: 0.5rem;
+  }
+
+  &--calculator {
+    border-top-color: $primaryBlue;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (min-width: 1142px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tile {
+    max-width: 28vw;
+
+    &--supervisor {
+      // align-self: flex-end;
+      // gap: none;
+      transform: translateY(50%);
+    }
+
+    &--karma {
+      transform: translateY(50%);
+    }
+  }
+
+  .container {
+    margin: 1rem;
+  }
+}
