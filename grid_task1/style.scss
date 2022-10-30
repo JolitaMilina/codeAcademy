@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+$primaryCyan: hsl(179, 62%, 43%);
+$primaryYellow: hsl(71, 73%, 54%);
+$neutralGray: hsl(204, 43%, 93%);
+$neutralBlue: hsl(218, 22%, 67%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Karla;
+}
+
+.wrapper {
+  background-color: hsl(180, 20%, 94%);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+    // flex-wrap: wrap;
+  &__top {
+    background-color: white;
+
+    &-h3 {
+      color: $primaryCyan;
+      font-size: 1.25rem;
+    }
+    &-p1 {
+      color: $primaryYellow;
+      font-weight: 700;
+    }
+
+    &-p2 {
+      color: $neutralBlue;
+    }
+  }
+
+  &__mid {
+    background-color: $primaryCyan;
+    color: white;
+
+    &-h3 {
+      margin-bottom: 2rem;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    &-price {
+      margin-bottom: 1rem;
+
+      &-span1 {
+        font-size: 2rem;
+        margin-right: 0.5rem;
+      }
+      &-span2 {
+        color: hsl(179, 63%, 59%);
+        font-weight: lighter;
+      }
+    }
+
+    &-p {
+      margin-bottom: 1.5rem;
+    }
+    &-btn {
+      width: 90%;
+      transform: translateX(5%);
+      padding: 0.9rem 4rem;
+      border-radius: 0.4rem;
+      border: none;
+      background-color: $primaryYellow;
+      color: white;
+      font-weight: 700;
+    }
+  }
+  &__bot {
+    background-color: hsl(179, 63%, 59%);
+    color: white;
+    &-h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    &-p {
+      font-size: 1rem;
+      font-weight: lighter;
+    }
+  }
+}
+
+.tile {
+  border: 1px solid black;
+  padding: 2rem 1rem;
+  width: 50vw;
+  flex-wrap: wrap;
+
+  &__h3 {
+    margin-bottom: 2rem;
+  }
+
+  &__p1 {
+    margin-bottom: 2rem;
+  }
+}
