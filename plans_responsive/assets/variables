@@ -1,0 +1,35 @@
+Projekto struktūra:
+
+
+	
+index.html - failas
+	
+css (aplankas)
+	
+
+		
+resets.css
+		
+variables.css
+		
+utilities.css
+		
+home.css (korteles randasi home page viduje...)
+	
+	
+
+
+ 
+
+Spalvų kodai:
+
+Tekstas:
+#080f1a	
+		
+#73829e
+			
+Mygtukas: #303ca5
+	
+Kainos fonas: #f4f6fc
+	
+Šriftas: Naudoti “Nunito Sans”

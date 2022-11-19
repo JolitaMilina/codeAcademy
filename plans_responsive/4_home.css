@@ -1,0 +1,107 @@
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(223, 210, 210);
+}
+
+.wrapper {
+  max-width: 1024px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  row-gap: 1rem;
+  column-gap: 0.1rem;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 0;
+  background-color: white;
+  margin: 1rem;
+}
+.container__h1 {
+  margin-bottom: 1.1rem;
+}
+
+.container__priceText {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.container__price {
+  background-color: var(--price-color);
+  padding: 0.5rem 2rem;
+  border-radius: 3rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.container__desc {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.container__btn {
+  padding: 1rem;
+  min-width: 43%;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.container__creditCard {
+  color: var(--text-color-secondary);
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.container__inc {
+  color: var(--text-color-secondary);
+  font-size: 0.8rem;
+}
+
+.container__incDesc {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 678px) {
+  .wrapper {
+    max-width: 678px;
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    column-gap: 0.1rem;
+  }
+  .container {
+    margin: 0;
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    max-width: 1024px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container {
+    border-bottom: none;
+    border-bottom: none;
+    flex-wrap: wrap;
+    width: 24%;
+  }
+}
