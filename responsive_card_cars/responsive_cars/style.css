@@ -1,0 +1,112 @@
+* {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card__container {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 150px;
+  margin-left: 20px;
+}
+
+.pic {
+  height: 60px;
+  background-repeat: no-repeat;
+  /* justify-content: flex-end; */
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.pic__sedans {
+  background-image: url("assets/icon-sedans.svg");
+}
+
+.pic__suvs {
+  background-image: url("assets/icon-suvs.svg");
+}
+
+.pic__luxury {
+  background-image: url("assets/icon-luxury.svg");
+}
+
+.card__container--sedans {
+  background-color: orange;
+  width: 250px;
+}
+
+.card__container--suvs {
+  background-color: hsl(184, 100%, 22%);
+  width: 250px;
+}
+
+.card__container--luxury {
+  background-color: hsl(179, 100%, 13%);
+  width: 250px;
+}
+
+.card__desc--heading {
+  color: white;
+  font-size: 25px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.card__desc--text {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 16px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+
+.btn {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn__sedans {
+  background-color: orange;
+}
+
+.btn__suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.btn__luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.button {
+  color: white;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 425px) {
+  .card__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* @media all and (max-width: 768px) {
+  .card__container {
+    display: flex;
+    margin-top: 50px;
+  }
+} */
